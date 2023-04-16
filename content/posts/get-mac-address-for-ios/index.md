@@ -93,8 +93,7 @@ I'm going to focus this post on iOS only, although I initially tried this idea o
 
 At first, to test if I can get anything out of it, I wrote (with the help of StackOverflow of course!) a simple application that reads all the interfaces it can on my iPhone and displays all their addresses.
 
-![Example image](images/image-4.png)
-<!-- {{< figure src="__GHOST_URL__/content/images/2020/02/image-4.png" >}} -->
+{{< figure align=center src="images/image-4.png" >}}
 
 I was disappointed because I didn't see anything worthy for the interface `en0`, the name of the WiFi interface. The link-local address looks like a random address.
 
@@ -128,9 +127,9 @@ We create an IPv6Address struct with the given IP as a string.The `rawValue`of t
 
 As we can see, the MAC address fetched is the correct one
 
-{{< figure src="images/image-7.png" title="The MAC address from our application" >}}
+{{< figure align=center src="images/image-7.png" title="The MAC address from our application" >}}
 
-{{< figure src="images/image-6.png" title="The MAC address as seen in phone settings" >}}
+{{< figure align=center src="images/image-6.png" title="The MAC address as seen in phone settings" >}}
 
 
 I searched on Google when and how these IPSec interfaces appear on iOS but without much success. I tried to see the list of my addresses with _Airplane mode_ on and I could still get an `ipsec0` interface, which means you can still get your MAC address even if you are offline.
