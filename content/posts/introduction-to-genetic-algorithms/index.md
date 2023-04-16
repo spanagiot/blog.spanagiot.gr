@@ -78,7 +78,7 @@ string(rand.Intn(90) + 32)
 
 we pick a random ASCII character from 32 to 122
 
-![ascii table](https://www.asciitable.com/index/asciifull.gif)
+![ascii table](https://www.asciitable.com/asciifull.gif)
 
 Next, we need a function to calculate how fit is a genome, or to express it in our problem domain, how close is a given string to our goal. Here, for every correct letter in the correct position the string gets a "point of fitness". The function is, again, simple to implement
 

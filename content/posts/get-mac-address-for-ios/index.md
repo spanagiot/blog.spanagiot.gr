@@ -3,6 +3,7 @@ categories = ["programming", "ios", "mac address", "swift"]
 date = 2020-02-10T18:21:10Z
 description = ""
 draft = false
+images = ["images/image-4.png", "images/image-6.png","images/image-7.png"]
 slug = "get-mac-address-for-ios"
 tags = ["programming", "ios", "mac address", "swift"]
 title = "Getting an iOS device MAC Address with Swift"
@@ -91,7 +92,8 @@ I'm going to focus this post on iOS only, although I initially tried this idea o
 
 At first, to test if I can get anything out of it, I wrote (with the help of StackOverflow of course!) a simple application that reads all the interfaces it can on my iPhone and displays all their addresses.
 
-{{< figure src="__GHOST_URL__/content/images/2020/02/image-4.png" >}}
+![Example image](images/image-4.png)
+<!-- {{< figure src="__GHOST_URL__/content/images/2020/02/image-4.png" >}} -->
 
 I was disappointed because I didn't see anything worthy for the interface `en0`, the name of the WiFi interface. The link-local address looks like a random address.
 
@@ -125,17 +127,16 @@ We create an IPv6Address struct with the given IP as a string.The `rawValue`of t
 
 As we can see, the MAC address fetched is the correct one
 
-{{< figure src="__GHOST_URL__/content/images/2020/02/image-7.png" caption="The MAC address from our application" >}}
+{{< figure src="images/image-7.png" title="The MAC address from our application" >}}
 
-{{< figure src="__GHOST_URL__/content/images/2020/02/image-6.png" caption="The MAC address as seen in phone settings" >}}
+{{< figure src="images/image-6.png" title="The MAC address as seen in phone settings" >}}
+
 
 I searched on Google when and how these IPSec interfaces appear on iOS but without much success. I tried to see the list of my addresses with _Airplane mode_ on and I could still get an `ipsec0` interface, which means you can still get your MAC address even if you are offline.
 
 I'm curious to learn if Apple will approve an application with this functionality in the App Store, but unfortunately I don't have a developer account.
 
-Later, I remembered that an application that shows the interfaces of your devices exist and I have already installed it. It's called _HE.NET Network Tools._ You can use that to see your interfaces to verify that the IPSec link-local address is based on your MAC address in case you can't compile and run the application I wrote.
-
-{{< bookmark url="https://apps.apple.com/us/app/he-net-network-tools/id858241710" title="\u200eHE.NET Network Tools" description="This suite of networks tools implements most of the network diagnostics that you need as a Network Engineer or System Administrator. Please help us improve it by giving us feedback. + ARP / NDP: Lookup local devices found on your network using either ARP (IPv4) or NDP (IPv6).\n+ DNS lookup: Search…" icon="https://apps.apple.com/favicon.ico" author="Hurricane Electric, LLC" publisher="App Store" thumbnail="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/2b/38/d9/2b38d9e8-df36-4599-b0a1-f8b005461faf/AppIcon-0-1x_U007emarketing-0-0-85-220-0-6.png/1200x630wa.png" caption="" >}}
+Later, I remembered that an application that shows the interfaces of your devices exist and I have already installed it. It's called [_HE.NET Network Tools._](https://apps.apple.com/us/app/he-net-network-tools/id858241710) You can use that to see your interfaces to verify that the IPSec link-local address is based on your MAC address in case you can't compile and run the application I wrote.
 
 If you managed to do something similar for Android, let me know! (mostly because I tried and failed on devices different than the Oculus Go)
 

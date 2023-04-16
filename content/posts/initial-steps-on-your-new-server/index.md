@@ -10,7 +10,7 @@ title = "Initial steps on your new server"
 +++
 
 
-It was not long ago when I received a message from my friend DaKnOb. He told me "Hey, I found that the domain spanagiot.gr is free. Why don't you register it and set up your own server?". In no time, I got the domain and a server running the latest Ubuntu (16.04 at this point). Here is what I learned in my short journey:
+It was not long ago when I received a message from my friend [DaKnOb](https://daknob.net). He told me "Hey, I found that the domain spanagiot.gr is free. Why don't you register it and set up your own server?". In no time, I got the domain and a server running the latest Ubuntu (16.04 at this point). Here is what I learned in my short journey:
 
 ### First three commands
 
