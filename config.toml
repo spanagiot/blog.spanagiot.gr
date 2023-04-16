@@ -4,3 +4,5 @@ title = 'My New Hugo Site'
 theme = 'PaperMod'
 [params]
 defaultTheme = "dark"
+[markup]
+  defaultMarkdownHandler = 'goldmark'
