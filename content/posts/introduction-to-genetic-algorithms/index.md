@@ -6,6 +6,7 @@ draft = false
 slug = "introduction-to-genetic-algorithms"
 tags = ["genetic algorithms", "machine learning", "programming", "tutorial", "beginner"]
 title = "Introduction to Genetic Algorithms"
+aliases = ["/introduction-to-genetic-algorithms"]
 
 +++
 

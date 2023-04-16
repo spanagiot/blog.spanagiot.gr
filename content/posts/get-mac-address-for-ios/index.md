@@ -7,6 +7,7 @@ images = ["images/image-4.png", "images/image-6.png","images/image-7.png"]
 slug = "get-mac-address-for-ios"
 tags = ["programming", "ios", "mac address", "swift"]
 title = "Getting an iOS device MAC Address with Swift"
+aliases = ["/get-mac-address-for-ios"]
 
 +++
 

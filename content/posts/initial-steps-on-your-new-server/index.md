@@ -6,6 +6,7 @@ draft = false
 slug = "initial-steps-on-your-new-server"
 tags = ["beginner", "cloud", "tutorial", "server", "ubuntu"]
 title = "Initial steps on your new server"
+aliases = ["/initial-steps-on-your-new-server"]
 
 +++
 
