@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://blog.spanagiot.gr/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'DevOps Diaries: A Personal Blog'
 theme = 'PaperMod'
 [params]
 defaultTheme = "dark"
