@@ -1,11 +1,15 @@
 ---
 title: "Breaking Up with Ghost: My Move to Hugo"
 date: 2023-04-22T18:47:38+03:00
-draft: true
+draft: false
 ---
 
 When I started this blog, I chose Ghost as the backend because it appeared to be a fresher alternative to the bloated WordPress. I didn't need all the features offered by WordPress, and a simpler platform seemed like the obvious choice.
+
+
 I installed it, created a couple of posts and I was pretty happy. I made sure to keep the backend up-to-date by installing the latest security patches and reviewing the release notes to avoid any compatibility issues with newer versions. A couple of times the updates broke the theme I used so I had to wait for the maintainer to release a fix.
+
+
 However, I realized that this level of maintenance may be excessive for a blog that I update infrequently, with only a few (or hopefully in the future, a dozen) posts. Additionally, Ghost's focus on catering to creators looking to monetize their readers and the features that were released didn't align with my expectations. As a result, I am exploring different platforms to use.
 
 This is where [Hugo](https://gohugo.io/) comes into play. [Hugo](https://gohugo.io/) is a static site generator that converts markdown files to HTML pages. It's pretty fast (written with Go) and easily extensible with themes and templates. The procedure to convert my existing blog to Hugo was easy, and the lack of content made it easier.
@@ -46,14 +50,19 @@ hugo new posts/my-first-post.md
 
 For more information and explanations you can read the quick-start guide of Hugo [here](https://gohugo.io/getting-started/quick-start/).
 
-So, after experimenting a bit witg Hugo and see how it works and how it is configured, it was time to export my existing Ghost blog and import it to Hugo.
-For this, I will use the [ghostToHugo](https://github.com/jbarone/ghostToHugo)
-I installed it with
+So, after experimenting a bit with Hugo and see how it works and how it is configured, it was time to export my existing Ghost blog and import it to Hugo.
+For this, I will use the [ghostToHugo](https://github.com/jbarone/ghostToHugo).
+
+I installed it
+
 ```
 go install github.com/jbarone/ghostToHugo@latest
 ```
 
-I needed to export the existing data by going to https://blog.spanagiot.gr/ghost/settings/labs and press the *Export your content* button. This will download a JSON file with all the blog content that I will feed to **ghostToHugo**.
+
+and then I needed to export the existing data.
+
+I navigated to https://blog.spanagiot.gr/ghost/settings/labs and pressed the *Export your content* button. This downloaded a JSON file with all the blog content that I will feed to **ghostToHugo**.
 
 **ghostToHugo** wants to generate a new, empty site to load the data so I navigated to `/tmp` and created the site there with
 ```
@@ -128,3 +137,5 @@ hugo
 ```
 
 and all the entire static site was generated inside the **public** folder, including HTML and all the assets.
+
+At present, the static files generated will be hosted and served from the same server as the Ghost instance. However, I am exploring the possibility of leveraging Github actions and Github pages in the future to automate the building and serving of these static files.
