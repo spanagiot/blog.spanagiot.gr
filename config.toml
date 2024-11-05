@@ -1,8 +1,12 @@
 baseURL = 'https://blog.spanagiot.gr/'
 languageCode = 'en-us'
 title = 'DevOps Diaries: A Personal Blog'
-theme = 'PaperMod'
+theme = 're-terminal'
 [params]
 defaultTheme = "dark"
+themeColor = "orange"
+[languages.en.params.logo]
+  logoText = "DevOps Diaries @spanagiot"
+  logoHomeLink = "/"
 [markup]
   defaultMarkdownHandler = 'goldmark'
