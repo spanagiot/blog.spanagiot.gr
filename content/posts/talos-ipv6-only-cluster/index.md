@@ -1,6 +1,6 @@
 +++
 title = "Building an IPv6-Only Kubernetes Cluster with Talos and talhelper"
-date = "2025-01-31T21:45:11+02:00"
+date = "2025-09-14T13:45:11+03:00"
 tags = ["IPv6", "Kubernetes", "Talos", "Talos Linux", "talhelper", "homelab", "Cilium"]
 keywords = ["Kubernetes IPv6", "IPv6-only cluster", "Talos Linux", "Talos", "talhelper", "homelab Kubernetes", "Cilium CNI", "DNS64 NAT64"]
 description = "See how I run a Kubernetes cluster exclusively on IPv6 using Talos Linux and talhelper. The post walks through setup, networking considerations, and DNS64/NAT64 configuration. It’s a starting point for experimenting with IPv6 networking in Kubernetes."
